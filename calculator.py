@@ -29,9 +29,10 @@ def main():
             x = float(input("첫 번째 숫자 입력: "))
             y = float(input("두 번째 숫자 입력: "))
             print(f"결과: {x - y}")  
-        elif choice == "3":
-            # 곱하기 기능은 나중에 다른 브랜치에서 작업 예정
-            pass
+        elif choice == "3": # "3"번을 선택한 경우, 곱하기 연산 실행
+            x = float(input("첫 번째 숫자 입력: "))
+            y = float(input("두 번째 숫자 입력: "))
+            print(f"결과: {x * y}")
         elif choice == "4":
             # 나누기 기능은 나중에 다른 브랜치에서 작업 예정
             pass
