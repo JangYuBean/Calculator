@@ -5,7 +5,8 @@ def subtract(a, b):
     return a - b
 def multiply(a, b):
     return a * b
-
+def divide (a, b):
+    return a / b
 def main():
     print("----------------------------")
     print("계산기 프로그램 입니다.")
@@ -32,6 +33,13 @@ def main():
             x = float(input("첫 번째 숫자 입력: "))
             y = float(input("두 번째 숫자 입력: "))
             print(f"결과: {x} - {y} = {multiply(x, y)}")
+        elif choice == "4":
+            x = float(input("첫 번째 숫자 입력: "))
+            y = float(input("두 번째 숫자 입력: "))
+            if y != 0:
+                print(f"결과: {x} / {y} = {divide(x, y)}")
+            else:
+                print("0으로 나눌 수 없습니다.")
         
 
 def main():
@@ -61,8 +69,8 @@ def main():
 
 if __name__ == "__main__":
     main()
-        else:
-            print("잘못된 입력입니다. 다시 시도해주세요.")
+else:
+    print("잘못된 입력입니다. 다시 시도해주세요.")
 
 if __name__ == "__main__":
     main()
