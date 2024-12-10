@@ -13,6 +13,10 @@ def divide (a, b):
 def exponent(base, exp):
     return base ** exp
 
+def sqrt(number):
+    if number < 0:
+        return "음수의 제곱근은 정의되지 않습니다."
+    return math.sqrt(number)
 def main():
     print("----------------------------")
     print("계산기 프로그램 입니다.")
@@ -24,6 +28,8 @@ def main():
         print("3. 곱하기")
         print("4. 나누기")
         print("5. 지수 계산 (x^y)")
+        print("6. 제곱근 계산 (√x)")
+
 
         choice = input("번호 : ")
 
@@ -51,6 +57,9 @@ def main():
             base = float(input("밑(base) 값을 입력하세요: "))
             exp = float(input("지수(exponent) 값을 입력하세요: "))
             print(f"결과: {base}^{exp} = {exponent(base, exp)}")
+        elif choice == "6":
+            number = float(input("숫자를 입력하세요: "))
+            print(f"결과: √{number} = {sqrt(number)}")
         else:
             print("잘못된 입력입니다. 다시 시도해주세요.")
 
